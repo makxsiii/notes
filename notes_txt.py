@@ -50,7 +50,7 @@ h_line.addLayout(v2_line)
 main.setLayout(h_line)
 
 def add_note():
-    k, note_name = QInputDialog.getText(main, 'Добавить заметку', 'Название заметки')
+    note_name, k = QInputDialog.getText(main, 'Добавить заметку', 'Название заметки')
     if k and note_name != '':
         note = list()
         note = [note_name, '', []]
